@@ -20,7 +20,7 @@
                 <div class="item" v-for="element,index in slides" v-show="checkActive(index)">
                     <img :src="element.image">
                     <div class="text">
-                        <h3>{{ element.title }} {{index}}</h3>    
+                        <h3>{{ element.title }}</h3>    
                         <p>
                             {{ element.text }}
                         </p>
@@ -28,8 +28,8 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
+                    <div class="prev" @click="prev()"></div>
+                    <div class="next" @click="next()"></div>
 
                     <div class="thumb" v-for="element,index in slides" :class="addActive(index)">
                         <img :src="element.image" :alt="element.title" />
