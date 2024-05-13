@@ -32,6 +32,11 @@ createApp({
     methods : {
         checkActive(index){
             return index == this.active;
+        },
+        addActive(index){
+            if(index == this.active){
+                return "active";
+            }
         }
     } 
 }).mount("#app")
