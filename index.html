@@ -17,7 +17,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item" v-for="element,index in slides" v-show="checkActive(index)">
+                <div class="item" v-for="element,index in slides" v-if="checkActive(index)">
                     <img :src="element.image">
                     <div class="text">
                         <h3>{{ element.title }} {{index}}</h3>    
