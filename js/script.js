@@ -1,4 +1,4 @@
-const slides = [
+    const slides = [
 {
     image: 'img/01.webp',
         title: 'Marvel\'s Spiderman Miles Morale',
